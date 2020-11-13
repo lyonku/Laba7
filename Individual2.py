@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import math
 
 if __name__ == '__main__':
     a = tuple(map(float, input("Введите список, вещественных элементов: ").split()))
@@ -26,7 +27,7 @@ if __name__ == '__main__':
 
     s = 0
     for k in range(e):
-        s += a[k]
+        s += int(math.floor(a[k]))
     print("Сумма: ", int(s))
 
     b = max(a)
